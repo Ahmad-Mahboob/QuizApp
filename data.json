@@ -1,0 +1,82 @@
+[
+    {
+        "question": "What is the SI unit of force?",
+        "optiona": "Newton",
+        "optionb": "Pascal",
+        "optionc": "Joule",
+        "optiond": "Watt",
+        "correctAnswer": "Newton"
+    },
+    {
+        "question": "What is the acceleration due to gravity on Earth?",
+        "optiona": "8.8 m/s²",
+        "optionb": "9.8 m/s²",
+        "optionc": "10.8 m/s²",
+        "optiond": "11.8 m/s²",
+        "correctAnswer": "9.8 m/s²"
+    },
+    {
+        "question": "Which of these is a scalar quantity?",
+        "optiona": "Velocity",
+        "optionb": "Force",
+        "optionc": "Work",
+        "optiond": "Acceleration",
+        "correctAnswer": "Work"
+    },
+    {
+        "question": "Which law explains the concept of inertia?",
+        "optiona": "Newton's First Law",
+        "optionb": "Newton's Second Law",
+        "optionc": "Newton's Third Law",
+        "optiond": "Law of Gravitation",
+        "correctAnswer": "Newton's First Law"
+    },
+    {
+        "question": "What is the unit of electrical resistance?",
+        "optiona": "Ohm",
+        "optionb": "Ampere",
+        "optionc": "Volt",
+        "optiond": "Watt",
+        "correctAnswer": "Ohm"
+    },
+    {
+        "question": "What is the energy possessed by a body due to its motion called?",
+        "optiona": "Potential Energy",
+        "optionb": "Kinetic Energy",
+        "optionc": "Thermal Energy",
+        "optiond": "Chemical Energy",
+        "correctAnswer": "Kinetic Energy"
+    },
+    {
+        "question": "What does a convex lens do to light rays?",
+        "optiona": "Diverges them",
+        "optionb": "Converges them",
+        "optionc": "Reflects them",
+        "optiond": "Scatters them",
+        "correctAnswer": "Converges them"
+    },
+    {
+        "question": "What is the formula for power in terms of work done and time?",
+        "optiona": "Power = Work × Time",
+        "optionb": "Power = Work ÷ Time",
+        "optionc": "Power = Work + Time",
+        "optiond": "Power = Work - Time",
+        "correctAnswer": "Power = Work ÷ Time"
+    },
+    {
+        "question": "Which of these is a renewable source of energy?",
+        "optiona": "Coal",
+        "optionb": "Oil",
+        "optionc": "Solar",
+        "optiond": "Natural Gas",
+        "correctAnswer": "Solar"
+    },
+    {
+        "question": "What type of mirror is used in vehicles to see the rear view?",
+        "optiona": "Concave Mirror",
+        "optionb": "Convex Mirror",
+        "optionc": "Plane Mirror",
+        "optiond": "Spherical Mirror",
+        "correctAnswer": "Convex Mirror"
+    }
+]

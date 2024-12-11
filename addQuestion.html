@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add More Questions</title>
+</head>
+<body>
+    <div class="add-question-form">
+        <form id="add-question">
+            <input type="text" name="question" placeholder="Question" required>
+            <input type="text" name="optiona" placeholder="Option A" required>
+            <input type="text" name="optionb" placeholder="Option B" required>
+            <input type="text" name="optionc" placeholder="Option C" required>
+            <input type="text" name="optiond" placeholder="Option D" required>
+            <input type="text" name="correctAnswer" placeholder="Correct Answer" required>
+            <button type="submit">Add Question</button>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('add-question').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const questionData = Object.fromEntries(formData.entries());
+    
+            try {
+                const response = await fetch('http://localhost:5000/api/questions', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(questionData),
+                });
+                if (response.ok) alert('Question added successfully!');
+            } catch (error) {
+                console.error("Failed to add question:", error);
+            }
+        });
+    </script>    
+</body>
+</html>
