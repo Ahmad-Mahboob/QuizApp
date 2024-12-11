@@ -61,6 +61,6 @@ app.post('/api/questions', async (req, res) => {
     }
 });
 
-app.listen(port,'0.0.0.0', () => {
-    console.log(`Server running on http://192.168.100.76:${port}`);
+app.listen(port, () => {
+    console.log(`Server running ${port}`);
 });
