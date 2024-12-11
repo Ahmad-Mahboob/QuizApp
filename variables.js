@@ -25,7 +25,7 @@ let quesNo = 0;
 async function fetchQuestions() {
     try {
         // const response = await fetch(`http://localhost:${port}/api/questions`);
-        const response = await fetch(`http://192.168.100.76:${port}/api/questions`);
+        const response = await fetch(`mongodb+srv://admin:Ahmad5568@@cluster0.ncheo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`);
         const questions = await response.json();
         quizQuestions = questions;
         actualAnswers = questions.map(q => q.correctAnswer);
