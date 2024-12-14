@@ -23,14 +23,22 @@ let quesNo = 0;
 
 async function fetchQuestions() {
     try {
-        const response = await fetch('https://quiz-app-one-bice.vercel.app/api/questions');
+        const response = await fetch('/api/questions'); // Use relative path for local server
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const questions = await response.json();
         quizQuestions = questions;
+
+        // Map actual answers for validation
         actualAnswers = questions.map(q => q.correctAnswer);
+        
+        // Call function to render the quiz
         createQuiz();
     } catch (error) {
         console.error("Failed to fetch questions:", error);
     }
 }
+
 
 fetchQuestions();
