@@ -23,7 +23,7 @@ let quesNo = 0;
 
 async function fetchQuestions() {
     try {
-        const response = await fetch('mongodb+srv://admin:Ahmad5568@@cluster0.ncheo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+        const response = await fetch('https://quiz-app-one-bice.vercel.app/api/questions');
         const questions = await response.json();
         quizQuestions = questions;
         actualAnswers = questions.map(q => q.correctAnswer);
